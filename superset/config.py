@@ -1393,8 +1393,8 @@ PREFERRED_DATABASES: list[str] = [
 # one here.
 TEST_DATABASE_CONNECTION_TIMEOUT = timedelta(seconds=30)
 
-# Enable/disable CSP warning
-CONTENT_SECURITY_POLICY_WARNING = True
+# Enable/disable CSP warning / CONTENT_SECURITY_POLICY_WARNING = True
+CONTENT_SECURITY_POLICY_WARNING = False
 
 # Do you want Talisman enabled?
 TALISMAN_ENABLED = utils.cast_to_boolean(os.environ.get("TALISMAN_ENABLED", True))
